@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Kenia&family=Roboto:ital,wght@1,300&display=swap");
 body {
+    padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -23,7 +24,7 @@ body {
 
 .active {
     width: 150px;
-    background-color: rgb(26, 26, 68);
+    background-color: rgb(10, 10, 26);
     height: 100vh;
     position: absolute;
     display: flex;
@@ -50,18 +51,45 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 50%;
     margin-left: -40px;
-    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
 }
 
 .active ul li {
     list-style-type: none;
+    padding: 15px 0;
+}
+
+.active ul li:hover {
+    background-color: rgb(59, 84, 131);
+    /* height: 30px; */
+    width: 100%;
+    border-radius: 5%;
+}
+
+.active ul li:hover a {
+    color: rgb(255, 255, 255);
 }
 
 .active ul li a {
     text-decoration: none;
     color: cornsilk;
     font-family: "Ubuntu";
+}
+
+
+/* navbar not active */
+
+.non-active {
+    width: -160px;
+    background-color: rgb(10, 10, 26);
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }

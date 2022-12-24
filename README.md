@@ -2,4 +2,7 @@
 
 <p>## all codes are subject to change in the future, a pull request is advised. </p>
 
-<center> <small> Mail Jaysonceojaytech@gmail.com for enquiries, questions and contributions</small> </center>
+<br/>
+<br/>
+
+<small> Mail Jaysonceojaytech@gmail.com for enquiries, questions and contributions</small>

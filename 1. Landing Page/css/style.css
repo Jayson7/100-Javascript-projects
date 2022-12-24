@@ -15,8 +15,6 @@ body {
 
 .navbar {
     width: 50px;
-    background-color: rgb(26, 26, 68);
-    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -83,13 +81,14 @@ body {
 
 /* navbar not active */
 
-.non-active {
+.in-active * {
     width: -160px;
-    background-color: rgb(10, 10, 26);
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    display: none;
+}
+
+.in-active i {
+    font-size: 35px;
+    color: rgb(254, 254, 254);
+    margin-left: 20px;
+    margin-top: 20px;
 }

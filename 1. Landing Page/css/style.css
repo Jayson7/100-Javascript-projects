@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    transition: all 1s ease-in-out;
 }
 
 .container {
@@ -163,4 +164,58 @@ h6 {
     background-color: coral;
     border: 3px solid coral;
     color: rgb(10, 17, 60);
+}
+
+
+/* preloader */
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid rgb(17, 3, 47);
+    border-bottom: 16px solid rgb(200, 11, 23);
+    border-left: 16px solid rgb(72, 67, 6);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
 }

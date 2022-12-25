@@ -21,7 +21,7 @@ body {
 }
 
 .active {
-    width: 150px;
+    width: 250px;
     background-color: rgb(10, 10, 26);
     height: 100vh;
     position: absolute;
@@ -29,6 +29,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    animation: anim 2s ease-in-out;
 }
 
 .active nav {
@@ -77,6 +78,9 @@ body {
     color: cornsilk;
     font-family: "Ubuntu";
 }
+
+
+/* animate navbar active */
 
 
 /* navbar not active */

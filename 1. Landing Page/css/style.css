@@ -21,15 +21,21 @@ body {
 }
 
 .active {
-    width: 250px;
+    width: 350px;
     background-color: rgb(10, 10, 26);
     height: 100vh;
     position: absolute;
     display: flex;
+    top: 0;
+    left: 0;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    animation: anim 2s ease-in-out;
+    transition: all 1s;
+}
+
+.active * {
+    transition: all 0.5s;
 }
 
 .active nav {
@@ -60,6 +66,7 @@ body {
 .active ul li {
     list-style-type: none;
     padding: 15px 0;
+    width: 100%;
 }
 
 .active ul li:hover {
@@ -80,19 +87,25 @@ body {
 }
 
 
-/* animate navbar active */
-
-
 /* navbar not active */
 
 .in-active * {
-    width: -160px;
-    display: none;
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: -50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
 }
 
 .in-active i {
-    font-size: 35px;
+    font-size: 45px;
     color: rgb(254, 254, 254);
-    margin-left: 20px;
-    margin-top: 20px;
+    top: 40px;
+    position: absolute;
+    left: 40px;
 }

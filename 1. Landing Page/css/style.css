@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    background: url("../images/2.jpg") top center;
+    background: linear-gradient(132deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/2.jpg") top center / cover;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -108,4 +108,24 @@ body {
     top: 40px;
     position: absolute;
     left: 40px;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 10px 5px;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-family: ;
+    color: coral;
+    font-size: 30px;
 }

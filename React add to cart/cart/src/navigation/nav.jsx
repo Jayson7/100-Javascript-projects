@@ -7,11 +7,12 @@ import Homepage from "../Pages/home";
 import Cart from "../cart storage/cart";
 import Product from "../cart storage/product";
 import Contact from "../Pages/contact";
-
+import Navbar from "./navbar";
 // routes for all pages including cart, product and homepage
 function Nav() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="*" element={<Homepage />} />
         <Route index element={<Homepage />} />

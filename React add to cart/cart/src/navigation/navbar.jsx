@@ -1,59 +1,56 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  AppBar,
-  Toolbar,
-  CssBaseline,
-  Typography,
-  makeStyles,
-} from "@mui/material";
-
-const useStyles = makeStyles((theme) => ({
-  navlinks: {
-    marginLeft: theme.spacing(10),
-    display: "flex",
-  },
-  logo: {
-    flexGrow: "1",
-    cursor: "pointer",
-  },
-  link: {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "20px",
-    marginLeft: theme.spacing(20),
-    "&:hover": {
-      color: "yellow",
-      borderBottom: "1px solid white",
-    },
-  },
-}));
-
 function Navbar() {
-  const classes = useStyles();
   return (
-    <AppBar position="static">
-      <CssBaseline />
-      <Toolbar>
-        <Typography variant="h4" className={classes.logo}>
-          Navbar
-        </Typography>
-        <div className={classes.navlinks}>
-          <Link to="/" className={classes.link}>
-            Home
+    <div>
+      <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <Link class=" text-white navbar-brand text-white" to="#">
+            Navbar
           </Link>
-          <Link to="/about" className={classes.link}>
-            About
-          </Link>
-          <Link to="/contact" className={classes.link}>
-            Contact
-          </Link>
-          <Link to="/faq" className={classes.link}>
-            FAQ
-          </Link>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <Link
+                  class=" text-white nav-link active"
+                  aria-current="page"
+                  to="/"
+                >
+                  Homepage
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class=" text-white nav-link" to="/product">
+                  Products
+                </Link>
+              </li>
+
+              <li class="nav-item">
+                <Link class=" text-white nav-link" to="cart">
+                  Cart
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class=" text-white nav-link" to="contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-      </Toolbar>
-    </AppBar>
+      </nav>
+    </div>
   );
 }
 

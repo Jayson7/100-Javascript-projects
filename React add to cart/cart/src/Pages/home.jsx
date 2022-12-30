@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 function Homepage() {
   return (
     <div className="container mt-5">
-      <div className="jumbotron">
-        <h1 className="display-4">Hello, world!</h1>
+      <div className="jumbotron text-white">
+        <h1 className="display-4">We sell What You Desire. SPEED!</h1>
         <p className="lead">
           This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information.

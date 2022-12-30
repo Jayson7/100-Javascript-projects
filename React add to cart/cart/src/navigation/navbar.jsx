@@ -5,8 +5,12 @@ function Navbar() {
     <div>
       <nav class="navbar navbar-expand-lg bg-success">
         <div class="container-fluid">
-          <Link class=" text-white navbar-brand text-white" to="#">
-            Navbar
+          <Link
+            class=" text-white navbar-brand text-white"
+            to="#"
+            style={{ color: "red", fontSize: "25px" }}
+          >
+            CarMasters
           </Link>
           <button
             class="navbar-toggler"

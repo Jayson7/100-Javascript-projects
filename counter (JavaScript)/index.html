@@ -21,19 +21,20 @@
 </head>
 
 <body>
-    <div class="container bg-white">
+    <div class="container bg-white rounded">
         <div class="d-flex justify-center align-center flex-column">
-            <h1 class="text-center mt-5">Counter</h1>
+            <h1 class="text-center mt-5 display-4">Counter</h1>
 
             <div class="count my-4"></div>
 
             <div class="buttons mt-5">
-                <div class="btn btn-primary mx-2">Increase</div>
-                <div class="btn btn-primary">Clear</div>
-                <div class="btn btn-danger mx-2">Decrease</div>
+                <div class="btn btn-primary mx-2" onclick="Increase()">Increase</div>
+                <div class="btn btn-danger" onclick="erase()">Clear</div>
+                <div class="btn btn-warning mx-2" onclick="Decrease()">Decrease</div>
             </div>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 
 </html>

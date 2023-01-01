@@ -2,4 +2,18 @@ body {
     background: black;
     overflow: hidden;
     margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 50vh;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }

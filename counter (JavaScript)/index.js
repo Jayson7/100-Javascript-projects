@@ -1,0 +1,3 @@
+const Increase = () => {
+    alert("increase");
+};

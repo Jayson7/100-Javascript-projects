@@ -17,3 +17,9 @@ body {
     justify-content: center;
     display: flex;
 }
+
+.count {
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+}

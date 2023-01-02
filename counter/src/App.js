@@ -3,15 +3,16 @@ import { useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
+
   return (
     <div className="App">
       <h1>Counter</h1>
 
       <div className="count">{count}</div>
       <div className="buttons">
-        <button>Decrement</button>
-        <button>Increment</button>
-        <button>Erase</button>
+        <button onClick={() => setCount(count - 1)}>Decrement</button>
+        <button onClick={() => setCount(count + 1)}>Increment</button>
+        <button onClick={() => setCount(0)}>Erase</button>
       </div>
     </div>
   );

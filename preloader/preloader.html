@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="spinner"></div>
+        <div class="spinner2"></div>
+    </div>
+
+    <style>
+        .loader-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.834);
+            z-index: 1;
+        }
+        
+        .spinner {
+            width: 64px;
+            height: 64px;
+            border: 8px solid;
+            border-color: transparent #e2e4ed transparent #e0e1eb;
+            border-radius: 50%;
+            animation: spin-anim 1.2s linear infinite;
+        }
+        
+        .spinner2 {
+            width: 64px;
+            margin-left: 20px;
+            height: 64px;
+            border: 8px solid;
+            border-color: #9fa1ab transparent #b2b6ce transparent;
+            border-radius: 50%;
+            animation: spin-anim 1.2s linear infinite;
+        }
+        
+        @keyframes spin-anim {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</body>
+
+</html>

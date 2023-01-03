@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(195, 29, 228);
+}
+
+.paragraph {
+    color: rgb(13, 45, 150);
+    padding: 20px;
+    background-color: black;
+    margin: 60px;
+}
+
+#paragraph {
+    color: rgb(210, 217, 241);
+    padding: 20px;
+    background-color: black;
+    margin: 60px;
+    font-size: 30px;
+}
+
+body {
+    /* background: radial-gradient(#9e1c1c, rgb(8, 20, 85)); */
+    background: linear-gradient(#9e1c1c, rgb(8, 20, 85));
+}
+
+
+/* padding will create a space inside the box */
+
+
+/* margin will crete a space outside the box */

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Qwitcher+Grypen:wght@700&family=Roboto:ital,wght@1,300&display=swap");
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: "Qwitcher";
+    --tertiary: "Roboto";
+    --secondary: "Aboreto";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-family: var(--secondary);
+    font-weight: 700;
+}
+
+.logo {
+    margin-left: 5px;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 70px;
+    height: 100%;
+}
+
+.fa-bars {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.times {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+    /* background-color: aqua; */
+    color: blanchedalmond;
+}
+
+.fa-times {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.active {
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 30%;
+}
+
+.active nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.active nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.active nav ul li {
+    list-style-type: none;
+}
+
+.active nav ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: var(--secondary);
+}
+
+.non-active {
+    display: none;
+}
+
+
+/* container starts */
+
+.container {
+    background: linear-gradient(to right, rgb(17, 20, 43), rgb(11, 12, 24));
+    width: 100%;
+    height: calc(100vh - 70px);
+}

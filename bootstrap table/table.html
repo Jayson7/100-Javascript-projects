@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Ward</th>
+            <th scope="col">DC</th>
+            <th scope="col">Date</th>
+            <th scope="col">LG</th>
+        </tr>
+    </thead>
+
+    <tbody id="table-it">
+        {% for wards_assigned in wards_assigned %}
+        <tr>
+            <th scope="row">{{i.ward}}</th>
+            <td>{{i.director_of_constituency}}</td>
+            <td>{{i.date_assigned.date}}</td>
+            <td>{{i.local_government}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
